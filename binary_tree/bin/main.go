@@ -37,4 +37,6 @@ func main() {
 	fmt.Println(binary_tree.MaxDepth(tree))
 	//合并
 	fmt.Println(binary_tree.LevelPrint(binary_tree.Merge(tree, tree)))
+	//对称
+	fmt.Println(binary_tree.IsSymmetric(tree))
 }
