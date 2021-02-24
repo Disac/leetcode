@@ -20,6 +20,5 @@ func MaxDepth(t *TreeNode) int {
 	if t == nil {
 		return 0
 	}
-	math.Max(float64(MaxDepth(t.Left)), float64(MaxDepth(t.Right)))
 	return int(math.Max(float64(MaxDepth(t.Left)), float64(MaxDepth(t.Right)))) + 1
 }

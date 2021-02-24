@@ -39,4 +39,6 @@ func main() {
 	fmt.Println(binary_tree.LevelPrint(binary_tree.Merge(tree, tree)))
 	//对称
 	fmt.Println(binary_tree.IsSymmetric(tree))
+	//平衡
+	fmt.Println(binary_tree.IsBalance(tree))
 }
