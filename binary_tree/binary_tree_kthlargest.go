@@ -33,7 +33,7 @@ func KthLargest(t *TreeNode, k int) int {
 	return Res
 }
 
-//中序遍历
+//中序遍历倒序
 func Dfs(t *TreeNode) {
 	if t == nil {
 		return
