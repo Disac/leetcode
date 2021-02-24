@@ -35,4 +35,6 @@ func main() {
 	fmt.Println(pre, in, post)
 	//深度
 	fmt.Println(binary_tree.MaxDepth(tree))
+	//合并
+	fmt.Println(binary_tree.LevelPrint(binary_tree.Merge(tree, tree)))
 }
