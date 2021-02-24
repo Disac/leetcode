@@ -19,14 +19,20 @@ func main() {
 			Right: &binary_tree.TreeNode{Val: 8},
 		},
 	}
+	//层级遍历
 	fmt.Println(binary_tree.LevelPrint(tree))
-	mirror := binary_tree.Mirror(tree)
-	fmt.Println(binary_tree.LevelPrint(mirror))
+	//镜像后层级遍历
+	fmt.Println(binary_tree.LevelPrint(binary_tree.Mirror(tree)))
+	//前序遍历
 	var pre = make([]int, 0)
 	binary_tree.PreTraversal(tree, &pre)
+	//中序遍历
 	var in = make([]int, 0)
 	binary_tree.InTraversal(tree, &in)
+	//后序遍历
 	var post = make([]int, 0)
 	binary_tree.PostTraversal(tree, &post)
 	fmt.Println(pre, in, post)
+	//深度
+	fmt.Println(binary_tree.MaxDepth(tree))
 }
