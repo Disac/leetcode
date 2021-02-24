@@ -22,4 +22,11 @@ func main() {
 	fmt.Println(binary_tree.LevelPrint(tree))
 	mirror := binary_tree.Mirror(tree)
 	fmt.Println(binary_tree.LevelPrint(mirror))
+	var pre = make([]int, 0)
+	binary_tree.PreTraversal(tree, &pre)
+	var in = make([]int, 0)
+	binary_tree.InTraversal(tree, &in)
+	var post = make([]int, 0)
+	binary_tree.PostTraversal(tree, &post)
+	fmt.Println(pre, in, post)
 }
