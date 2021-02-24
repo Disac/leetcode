@@ -23,6 +23,7 @@ func main() {
 	fmt.Println(binary_tree.LevelPrint(tree))
 	//镜像后层级遍历
 	fmt.Println(binary_tree.LevelPrint(binary_tree.Mirror(tree)))
+	binary_tree.Mirror(tree)
 	//前序遍历
 	var pre = make([]int, 0)
 	binary_tree.PreTraversal(tree, &pre)
@@ -41,4 +42,6 @@ func main() {
 	fmt.Println(binary_tree.IsSymmetric(tree))
 	//平衡
 	fmt.Println(binary_tree.IsBalance(tree))
+	//第K大的元素
+	fmt.Println(binary_tree.KthLargest(tree, 1))
 }
