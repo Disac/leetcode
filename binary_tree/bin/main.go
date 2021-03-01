@@ -44,4 +44,12 @@ func main() {
 	fmt.Println(binary_tree.IsBalance(tree))
 	//第K大的元素
 	fmt.Println(binary_tree.KthLargest(tree, 1))
+	//给定两个节点的公共祖先
+	fmt.Println(binary_tree.LowestCommonAncestor(tree, 2, 8))
+	//单值二叉树
+	fmt.Println(binary_tree.IsSameValTree(tree))
+	//二叉树的直径
+	fmt.Println(binary_tree.Diameter(tree))
+	//二叉树剪枝
+	fmt.Println(binary_tree.LevelPrint(binary_tree.Prune(tree)))
 }
